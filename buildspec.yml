@@ -1,0 +1,24 @@
+version: 0.2
+
+phases:
+  install:
+    commands:
+        - sudo yum update -y
+        - sudo yum install pip -y
+        - pip install flask
+  build:
+    commands:
+      - echo Build started on `date`
+      - echo Compiling the Python code...
+      - python main.py
+  post_build:
+    commands:
+      - echo Build completed on `date`
+artifacts:
+  files:
+    - main.py
+    - appspec.yml
+    - templates/home.html
+    - templates/about.html
+    - templates/template.html
+    - static/template.css
