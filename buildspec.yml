@@ -22,3 +22,6 @@ artifacts:
     - templates/about.html
     - templates/template.html
     - static/template.css
+    - scripts/mkdir.sh
+    - scripts/start_flask.sh
+    - scripts/stop_flask.sh
