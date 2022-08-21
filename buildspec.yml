@@ -6,17 +6,19 @@ phases:
         - sudo yum update -y
         - sudo yum install pip -y
         - pip install flask
+        - pip install requests
   build:
     commands:
       - echo Build started on `date`
       - echo Compiling the Python code...
-      - python main.py
+      - python test_app.py
   post_build:
     commands:
       - echo Build completed on `date`
 artifacts:
   files:
     - main.py
+    - test_app.py
     - appspec.yml
     - templates/home.html
     - templates/about.html
