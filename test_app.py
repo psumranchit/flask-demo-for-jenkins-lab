@@ -10,7 +10,7 @@ class TestMyApp(unittest.TestCase):
     def test_main(self):
         rv = self.app.get('/')
         assert rv.status == '200 OK'
-        assert b'Jenkins CI/CD' in rv.data
+        assert b'Flask Tutorial' in rv.data
 
     def test_404(self):
         rv = self.app.get('/other')
