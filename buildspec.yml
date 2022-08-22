@@ -3,10 +3,10 @@ version: 0.2
 phases:
   install:
     commands:
-        - sudo yum update -y
-        - sudo yum install pip -y
-        - pip install flask
-        - pip install requests
+      - sudo yum update -y
+      - sudo yum install pip -y
+      - pip install flask
+      - pip install requests
   build:
     commands:
       - echo Build started on `date`
