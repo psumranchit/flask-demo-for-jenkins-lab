@@ -1,1 +1,1 @@
-nohup python /web-demo/main.py > output.log &
+nohup python /web-demo/main.py > /dev/null 2>&1 &
