@@ -22,6 +22,7 @@ artifacts:
     - templates/home.html
     - templates/about.html
     - templates/template.html
+    - templates/contact.html
     - static/template.css
     - scripts/mkdir.sh
     - scripts/start_flask.sh

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Contact Us</title>
+  </head>
+  <body>
+    {% extends "template.html" %}
+    {% block content %}
+    
+    <h1> Contact Us </h1>
+    
+    <form class="contact_form" onsubmit="return submitForm(event)">
+        <div>
+            <label>Name:</label>
+            <input id="name" name="name" type="text">
+        </div>
+        <div>
+            <label>Email:</label>
+            <input id="email" name="email" type="text">
+        </div>
+        <div>
+            <label>Comments:</label>
+            <input id="comments" name="comments" type="text">
+        </div>
+        <div>
+            <input id="submit" type="submit">
+        </div>
+    </form>
+      
+    {% endblock %}
+  </body>
+</html>
