@@ -8,9 +8,10 @@
 .meme {
     font-family: fantasy;
 }
-
 .contact_form {
     display: inline-block;
     width: 100px;
+}
+.contact_div {
     margin-bottom: 10px;
 }
